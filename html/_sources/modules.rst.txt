@@ -1,0 +1,12 @@
+test
+====
+
+.. toctree::
+   :maxdepth: 4
+
+   accounts
+   gallery
+   groups
+   notifications
+   photos
+   photosets

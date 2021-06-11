@@ -1,0 +1,7 @@
+photosets module
+================
+
+.. automodule:: photosets
+   :members:
+   :undoc-members:
+   :show-inheritance:

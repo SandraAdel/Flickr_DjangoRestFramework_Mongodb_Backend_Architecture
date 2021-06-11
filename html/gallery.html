@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>gallery module</title>
+    
+
+    <link rel="stylesheet" href="_static/css/redactor.css" type="text/css" />
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <link rel="stylesheet" href="_static/css/redactor.css" type="text/css" />
+    
+    
+    <link rel="index" title="Index" href="genindex.html"/>
+    <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Fotone 1.0.0 documentation" href="index.html"/>
+    <link rel="up" title="test" href="modules.html"/>
+    <link rel="next" title="groups module" href="groups.html"/>
+    <link rel="prev" title="accounts module" href="accounts.html"/> 
+</head>
+
+<body role="document">
+     
+
+    
+<a href="#" id="js-navigation-toggle" class="navigation-toggle">
+    <i class="mdi mdi-menu"></i><i class="mdi mdi-close"></i>
+</a>
+
+<section class="site-sidebar">
+
+<nav>
+
+
+    <a href="index.html" class="branding-link">
+    
+        Fotone
+    
+    
+    
+        
+        
+    
+    </a>
+
+    
+<section role="search">
+    <form action="search.html" method="get" class="site-searchform">
+        <input type="text" name="q" placeholder="Search docs" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+</section>
+
+
+
+    <section class="site-nav">
+    
+    
+        <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">test</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="accounts.html">accounts module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">gallery module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="groups.html">groups module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notifications.html">notifications module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="photos.html">photos module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="photosets.html">photosets module</a></li>
+</ul>
+</li>
+</ul>
+
+    
+    </section>
+
+</nav>
+
+</section>
+
+    <main class="site-main" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<nav class="site-breadcrumbs">
+    <ul>
+    
+        <li>
+            <a href="index.html">Docs</a> /
+        </li>
+        
+        <li>
+            <a href="modules.html">test</a> /
+        </li>
+        
+        <li class="site-breadcrumbs__leaf">gallery module</li>
+    
+    </ul>
+</nav>
+        <section class="site-content">
+            <div class="container">
+                
+  <section id="module-gallery">
+<span id="gallery-module"></span><h1>gallery module<a class="headerlink" href="#module-gallery" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.add_photo_to_gallery">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">add_photo_to_gallery</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gallery_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phopk</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.add_photo_to_gallery" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add photo to a specific gallery</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – user : Logged in user</p></li>
+<li><p><strong>type</strong> – user object</p></li>
+<li><p><strong>name</strong> – photo_obj : Photo to be added</p></li>
+<li><p><strong>type</strong> – photo object</p></li>
+<li><p><strong>name</strong> – gallery_obj : Gallery to add the photo to</p></li>
+<li><p><strong>type</strong> – gallery object</p></li>
+<li><p><strong>name</strong> – phopk : photo’s primary key</p></li>
+<li><p><strong>type</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Response</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.check_comment_exists">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">check_comment_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">compk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gallery_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.check_comment_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a comment exist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – compk : comment id</p></li>
+<li><p><strong>type</strong> – int</p></li>
+<li><p><strong>name</strong> – gallery_obj : gallery in which comment belong to</p></li>
+<li><p><strong>type</strong> – gallery object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>bool : Does comment exist?</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>Response</p>
+</dd>
+<dt class="field-odd">Return name</dt>
+<dd class="field-odd"><p>comment : comment returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>comment object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.check_existence_of_object_in_list">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">check_existence_of_object_in_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.check_existence_of_object_in_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>check object existence in a list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – obj : gallery/Account/group … etc</p></li>
+<li><p><strong>type</strong> – gallery/Account/group … etc  object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.check_gallery_exists">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">check_gallery_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">galpk</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.check_gallery_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a gallery exist and get it</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – galpk : if of gallery to check</p></li>
+<li><p><strong>type</strong> – user object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>bool : Does gallery exist?</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>Response</p>
+</dd>
+<dt class="field-odd">Return name</dt>
+<dd class="field-odd"><p>gallery_obj : Gallery returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>gallery object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.check_gallery_photos_limits">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">check_gallery_photos_limits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.check_gallery_photos_limits" title="Permalink to this definition">¶</a></dt>
+<dd><p>check gallery photo limits</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – obj : gallery</p></li>
+<li><p><strong>type</strong> – gallery object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.check_photo_exists">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">check_photo_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">phopk</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.check_photo_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a photo exist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – phopk : Photo id</p></li>
+<li><p><strong>type</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>bool : Does photo exist?</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>Response</p>
+</dd>
+<dt class="field-odd">Return name</dt>
+<dd class="field-odd"><p>photo : photo returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>photo object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.check_photo_privacy">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">check_photo_privacy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.check_photo_privacy" title="Permalink to this definition">¶</a></dt>
+<dd><p>check photo privacy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – obj : photo</p></li>
+<li><p><strong>type</strong> – photo object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.create_gallery_with_primary_photo">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">create_gallery_with_primary_photo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phopk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.create_gallery_with_primary_photo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create gallery with primary photo</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – userpk : user id</p></li>
+<li><p><strong>type</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.decrement_gallery_items">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">decrement_gallery_items</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.decrement_gallery_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decrement gallery items</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – obj : gallery</p></li>
+<li><p><strong>type</strong> – gallery object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.get_user_galleries">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">get_user_galleries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">userpk</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.get_user_galleries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get  galleries of a user</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – userpk : user id</p></li>
+<li><p><strong>type</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>bool : Does galleries exist?</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>Response</p>
+</dd>
+<dt class="field-odd">Return name</dt>
+<dd class="field-odd"><p>galleries : galleries returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>gallery list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.increment_gallery_items">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">increment_gallery_items</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.increment_gallery_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increment gallery items</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – obj : gallery</p></li>
+<li><p><strong>type</strong> – gallery object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.remove_gallery_notification">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">remove_gallery_notification</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photo_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gallery_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.remove_gallery_notification" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete gallery notification</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – obj : photo</p></li>
+<li><p><strong>type</strong> – photo object</p></li>
+<li><p><strong>name</strong> – obj : Logged in user</p></li>
+<li><p><strong>type</strong> – user object</p></li>
+<li><p><strong>name</strong> – obj : gallery</p></li>
+<li><p><strong>type</strong> – gallery object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.remove_photo_from_gallery">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">remove_photo_from_gallery</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photo_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gallery_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.remove_photo_from_gallery" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a specific photo from a given gallery</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – photo_obj : Photo to be added</p></li>
+<li><p><strong>type</strong> – photo object</p></li>
+<li><p><strong>name</strong> – gallery_obj : Gallery to add the photo to</p></li>
+<li><p><strong>type</strong> – gallery object</p></li>
+<li><p><strong>name</strong> – user : Logged in user</p></li>
+<li><p><strong>type</strong> – user object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Response</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.search_gallery">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">search_gallery</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.search_gallery" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search gallery by title</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – value : Gallery title</p></li>
+<li><p><strong>type</strong> – str</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>bool : Does gallery exist?</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>Response</p>
+</dd>
+<dt class="field-odd">Return name</dt>
+<dd class="field-odd"><p>galleries : Galleries returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>gallery objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.send_gallery_notification">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">send_gallery_notification</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photo_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gallery_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.send_gallery_notification" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send gallery notification</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – obj : photo</p></li>
+<li><p><strong>type</strong> – photo object</p></li>
+<li><p><strong>name</strong> – obj : Logged in user</p></li>
+<li><p><strong>type</strong> – user object</p></li>
+<li><p><strong>name</strong> – obj : gallery</p></li>
+<li><p><strong>type</strong> – gallery object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gallery.set_primary_photo_id">
+<span class="sig-prename descclassname"><span class="pre">gallery.</span></span><span class="sig-name descname"><span class="pre">set_primary_photo_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phopk</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gallery.set_primary_photo_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set primary photo of a gallery</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – obj : gallery</p></li>
+<li><p><strong>type</strong> – gallery object</p></li>
+<li><p><strong>name</strong> – phopk : photo id</p></li>
+<li><p><strong>type</strong> – gallery object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+            </div>
+
+        </section>
+
+        
+            <nav class="site-bottom-navigation" role="navigation">
+            
+                <a href="groups.html" class="btn btn--primary btn--next right"
+                    title="groups module" accesskey="n">
+                    Next
+                </a>
+            
+            
+                <a href="accounts.html" class="btn btn--primary btn--prev"
+                    title="accounts module" accesskey="p">
+                    Previous
+                </a>
+            
+            </nav>
+        
+
+        
+            <div class="source-link">
+            
+                
+                    <a href="_sources/gallery.rst.txt" rel="nofollow">
+                        <i class="mdi mdi-code-tags"></i>
+                        View page source
+                    </a>
+                
+            
+            </div>
+        
+
+
+
+    </main>
+
+    <footer class="site-footer">
+<div class="container">
+
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright 2021, MK.
+        </p>
+    </div>
+        <p>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+        <a href="https://github.com/testthedocs/sphinx_ttd_theme">theme</a>
+        provided by <a href="https://testthedocs">TestTheDocs</a>. 
+
+</div>
+</footer>
+
+    
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/theme-min.js"></script> 
+</body>
+</html>

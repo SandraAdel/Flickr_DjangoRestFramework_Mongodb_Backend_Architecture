@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>notifications module</title>
+    
+
+    <link rel="stylesheet" href="_static/css/redactor.css" type="text/css" />
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <link rel="stylesheet" href="_static/css/redactor.css" type="text/css" />
+    
+    
+    <link rel="index" title="Index" href="genindex.html"/>
+    <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Fotone 1.0.0 documentation" href="index.html"/>
+    <link rel="up" title="test" href="modules.html"/>
+    <link rel="next" title="photos module" href="photos.html"/>
+    <link rel="prev" title="groups module" href="groups.html"/> 
+</head>
+
+<body role="document">
+     
+
+    
+<a href="#" id="js-navigation-toggle" class="navigation-toggle">
+    <i class="mdi mdi-menu"></i><i class="mdi mdi-close"></i>
+</a>
+
+<section class="site-sidebar">
+
+<nav>
+
+
+    <a href="index.html" class="branding-link">
+    
+        Fotone
+    
+    
+    
+        
+        
+    
+    </a>
+
+    
+<section role="search">
+    <form action="search.html" method="get" class="site-searchform">
+        <input type="text" name="q" placeholder="Search docs" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+</section>
+
+
+
+    <section class="site-nav">
+    
+    
+        <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">test</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="accounts.html">accounts module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gallery.html">gallery module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="groups.html">groups module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">notifications module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="photos.html">photos module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="photosets.html">photosets module</a></li>
+</ul>
+</li>
+</ul>
+
+    
+    </section>
+
+</nav>
+
+</section>
+
+    <main class="site-main" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<nav class="site-breadcrumbs">
+    <ul>
+    
+        <li>
+            <a href="index.html">Docs</a> /
+        </li>
+        
+        <li>
+            <a href="modules.html">test</a> /
+        </li>
+        
+        <li class="site-breadcrumbs__leaf">notifications module</li>
+    
+    </ul>
+</nav>
+        <section class="site-content">
+            <div class="container">
+                
+  <section id="module-notifications">
+<span id="notifications-module"></span><h1>notifications module<a class="headerlink" href="#module-notifications" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="notifications.check_notification_exists">
+<span class="sig-prename descclassname"><span class="pre">notifications.</span></span><span class="sig-name descname"><span class="pre">check_notification_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#notifications.check_notification_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if notification exists</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – group id</p></li>
+<li><p><strong>type</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>bool : Does cnotification exist?</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>Response</p>
+</dd>
+<dt class="field-odd">Return name</dt>
+<dd class="field-odd"><p>notification : notification returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>notification object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="notifications.turn_off_notification_filter_update">
+<span class="sig-prename descclassname"><span class="pre">notifications.</span></span><span class="sig-name descname"><span class="pre">turn_off_notification_filter_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">noti_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gallery_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#notifications.turn_off_notification_filter_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>turn off notification</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – notification type</p></li>
+<li><p><strong>type</strong> – int</p></li>
+<li><p><strong>name</strong> – obj : user</p></li>
+<li><p><strong>type</strong> – user object</p></li>
+<li><p><strong>name</strong> – obj : group</p></li>
+<li><p><strong>type</strong> – group object</p></li>
+<li><p><strong>name</strong> – obj : gallery</p></li>
+<li><p><strong>type</strong> – gallery object</p></li>
+<li><p><strong>name</strong> – obj : topic</p></li>
+<li><p><strong>type</strong> – topic object</p></li>
+<li><p><strong>name</strong> – obj : photo</p></li>
+<li><p><strong>type</strong> – photo object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="notifications.turn_off_photo_function">
+<span class="sig-prename descclassname"><span class="pre">notifications.</span></span><span class="sig-name descname"><span class="pre">turn_off_photo_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">notification</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noti_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#notifications.turn_off_photo_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>turn off photo notification</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – notification field</p></li>
+<li><p><strong>type</strong> – string</p></li>
+<li><p><strong>name</strong> – obj : notification</p></li>
+<li><p><strong>type</strong> – notification object</p></li>
+<li><p><strong>name</strong> – obj : photo</p></li>
+<li><p><strong>type</strong> – photo object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="notifications.turn_on_notification_filter_update">
+<span class="sig-prename descclassname"><span class="pre">notifications.</span></span><span class="sig-name descname"><span class="pre">turn_on_notification_filter_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">noti_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gallery_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#notifications.turn_on_notification_filter_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>turn on notification</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – notification type</p></li>
+<li><p><strong>type</strong> – int</p></li>
+<li><p><strong>name</strong> – obj : user</p></li>
+<li><p><strong>type</strong> – user object</p></li>
+<li><p><strong>name</strong> – obj : group</p></li>
+<li><p><strong>type</strong> – group object</p></li>
+<li><p><strong>name</strong> – obj : gallery</p></li>
+<li><p><strong>type</strong> – gallery object</p></li>
+<li><p><strong>name</strong> – obj : topic</p></li>
+<li><p><strong>type</strong> – topic object</p></li>
+<li><p><strong>name</strong> – obj : photo</p></li>
+<li><p><strong>type</strong> – photo object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="notifications.turn_on_photo_function">
+<span class="sig-prename descclassname"><span class="pre">notifications.</span></span><span class="sig-name descname"><span class="pre">turn_on_photo_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">notification</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noti_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#notifications.turn_on_photo_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>turn on photo notification</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – notification field</p></li>
+<li><p><strong>type</strong> – string</p></li>
+<li><p><strong>name</strong> – obj : notification</p></li>
+<li><p><strong>type</strong> – notification object</p></li>
+<li><p><strong>name</strong> – obj : photo</p></li>
+<li><p><strong>type</strong> – photo object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+            </div>
+
+        </section>
+
+        
+            <nav class="site-bottom-navigation" role="navigation">
+            
+                <a href="photos.html" class="btn btn--primary btn--next right"
+                    title="photos module" accesskey="n">
+                    Next
+                </a>
+            
+            
+                <a href="groups.html" class="btn btn--primary btn--prev"
+                    title="groups module" accesskey="p">
+                    Previous
+                </a>
+            
+            </nav>
+        
+
+        
+            <div class="source-link">
+            
+                
+                    <a href="_sources/notifications.rst.txt" rel="nofollow">
+                        <i class="mdi mdi-code-tags"></i>
+                        View page source
+                    </a>
+                
+            
+            </div>
+        
+
+
+
+    </main>
+
+    <footer class="site-footer">
+<div class="container">
+
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright 2021, MK.
+        </p>
+    </div>
+        <p>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+        <a href="https://github.com/testthedocs/sphinx_ttd_theme">theme</a>
+        provided by <a href="https://testthedocs">TestTheDocs</a>. 
+
+</div>
+</footer>
+
+    
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/theme-min.js"></script> 
+</body>
+</html>

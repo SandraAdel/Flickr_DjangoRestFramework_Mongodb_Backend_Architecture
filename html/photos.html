@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>photos module</title>
+    
+
+    <link rel="stylesheet" href="_static/css/redactor.css" type="text/css" />
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <link rel="stylesheet" href="_static/css/redactor.css" type="text/css" />
+    
+    
+    <link rel="index" title="Index" href="genindex.html"/>
+    <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Fotone 1.0.0 documentation" href="index.html"/>
+    <link rel="up" title="test" href="modules.html"/>
+    <link rel="next" title="photosets module" href="photosets.html"/>
+    <link rel="prev" title="notifications module" href="notifications.html"/> 
+</head>
+
+<body role="document">
+     
+
+    
+<a href="#" id="js-navigation-toggle" class="navigation-toggle">
+    <i class="mdi mdi-menu"></i><i class="mdi mdi-close"></i>
+</a>
+
+<section class="site-sidebar">
+
+<nav>
+
+
+    <a href="index.html" class="branding-link">
+    
+        Fotone
+    
+    
+    
+        
+        
+    
+    </a>
+
+    
+<section role="search">
+    <form action="search.html" method="get" class="site-searchform">
+        <input type="text" name="q" placeholder="Search docs" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+</section>
+
+
+
+    <section class="site-nav">
+    
+    
+        <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">test</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="accounts.html">accounts module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gallery.html">gallery module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="groups.html">groups module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notifications.html">notifications module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">photos module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="photosets.html">photosets module</a></li>
+</ul>
+</li>
+</ul>
+
+    
+    </section>
+
+</nav>
+
+</section>
+
+    <main class="site-main" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<nav class="site-breadcrumbs">
+    <ul>
+    
+        <li>
+            <a href="index.html">Docs</a> /
+        </li>
+        
+        <li>
+            <a href="modules.html">test</a> /
+        </li>
+        
+        <li class="site-breadcrumbs__leaf">photos module</li>
+    
+    </ul>
+</nav>
+        <section class="site-content">
+            <div class="container">
+                
+  <section id="module-photos">
+<span id="photos-module"></span><h1>photos module<a class="headerlink" href="#module-photos" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.check_existence_of_media_file">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">check_existence_of_media_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.check_existence_of_media_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>check existence of media file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – data</p></li>
+<li><p><strong>type</strong> – obj</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>message</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>response</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.decrement_photo_meta_counts">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">decrement_photo_meta_counts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meta</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.decrement_photo_meta_counts" title="Permalink to this definition">¶</a></dt>
+<dd><p>decrement photo meta counts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – photo</p></li>
+<li><p><strong>type</strong> – object</p></li>
+<li><p><strong>name</strong> – meta</p></li>
+<li><p><strong>type</strong> – str</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.delete_object">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">delete_object</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.delete_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – object</p></li>
+<li><p><strong>type</strong> – obj</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.filter_by_date">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">filter_by_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_user_anonymous</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_required_photos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">following_required_photos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">everyone_required_photos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.filter_by_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter by date</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – is_user_anonymous</p></li>
+<li><p><strong>type</strong> – bool</p></li>
+<li><p><strong>name</strong> – date_type</p></li>
+<li><p><strong>type</strong> – str</p></li>
+<li><p><strong>name</strong> – min_date</p></li>
+<li><p><strong>type</strong> – str</p></li>
+<li><p><strong>name</strong> – max_date</p></li>
+<li><p><strong>type</strong> – str</p></li>
+<li><p><strong>name</strong> – user_required_photos</p></li>
+<li><p><strong>type</strong> – object</p></li>
+<li><p><strong>name</strong> – following_required_photos</p></li>
+<li><p><strong>type</strong> – object</p></li>
+<li><p><strong>name</strong> – everyone_required_photos</p></li>
+<li><p><strong>type</strong> – object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>user_required_photos</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>following_required_photos</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>everyone_required_photos</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.get_note_coordinates">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">get_note_coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.get_note_coordinates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get note coordinate</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – data</p></li>
+<li><p><strong>type</strong> – str</p></li>
+<li><p><strong>name</strong> – person_id</p></li>
+<li><p><strong>type</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>left_coord</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>top_coord</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>note_width</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>note_height</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.get_person_data">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">get_person_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">person</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.get_person_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>get person data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – person</p></li>
+<li><p><strong>type</strong> – obj</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>person_data</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.get_photo_and_person_tagged">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">get_photo_and_person_tagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photo_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">person_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.get_photo_and_person_tagged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get required photo and person tagged</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – photo_id</p></li>
+<li><p><strong>type</strong> – int</p></li>
+<li><p><strong>name</strong> – person_id</p></li>
+<li><p><strong>type</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>photo</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>person_tagged</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.get_photo_meta_lists">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">get_photo_meta_lists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meta</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.get_photo_meta_lists" title="Permalink to this definition">¶</a></dt>
+<dd><p>get photo meta lists</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – id</p></li>
+<li><p><strong>type</strong> – object</p></li>
+<li><p><strong>name</strong> – meta</p></li>
+<li><p><strong>type</strong> – str</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>photo</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>people_tagged</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.get_photo_permission">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">get_photo_permission</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">perm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.get_photo_permission" title="Permalink to this definition">¶</a></dt>
+<dd><p>get photo permission</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – photo</p></li>
+<li><p><strong>type</strong> – object</p></li>
+<li><p><strong>name</strong> – perm</p></li>
+<li><p><strong>type</strong> – str</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.get_photos_of_public_people">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">get_photos_of_public_people</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.get_photos_of_public_people" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get photos of the public people</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – user</p></li>
+<li><p><strong>type</strong> – obj</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>public_photos</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.get_photos_of_the_followed_people">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">get_photos_of_the_followed_people</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.get_photos_of_the_followed_people" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get photos of the followed people</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – user</p></li>
+<li><p><strong>type</strong> – obj</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>following_photos</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>following_list_ids</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.get_required_comment_and_its_photo">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">get_required_comment_and_its_photo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.get_required_comment_and_its_photo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get required comment and photo</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – id</p></li>
+<li><p><strong>type</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>required_comment</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>photo_id</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>photo</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.get_required_note_and_its_photo">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">get_required_note_and_its_photo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.get_required_note_and_its_photo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get required note and photo</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – id</p></li>
+<li><p><strong>type</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>required_note</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>photo_id</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>photo</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.get_required_photo">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">get_required_photo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.get_required_photo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get required photo</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – id</p></li>
+<li><p><strong>type</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>required_photo</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>photo_id</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>photo</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.get_required_tag_and_its_photo">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">get_required_tag_and_its_photo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.get_required_tag_and_its_photo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get required tag and photo</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – id</p></li>
+<li><p><strong>type</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>required_tag</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>photo</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.get_search_photos_anonymous_case">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">get_search_photos_anonymous_case</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#photos.get_search_photos_anonymous_case" title="Permalink to this definition">¶</a></dt>
+<dd><p>get search photos anonymous case</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>user_required_photos</p>
+</dd>
+<dt class="field-even">return</dt>
+<dd class="field-even"><p>following_required_photos</p>
+</dd>
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>everyone_required_photos</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.increment_photo_meta_counts">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">increment_photo_meta_counts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meta</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.increment_photo_meta_counts" title="Permalink to this definition">¶</a></dt>
+<dd><p>increment photo meta counts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – photo</p></li>
+<li><p><strong>type</strong> – object</p></li>
+<li><p><strong>name</strong> – meta</p></li>
+<li><p><strong>type</strong> – str</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.limit_photos_number">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">limit_photos_number</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_limit</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.limit_photos_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limit photo number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – photos</p></li>
+<li><p><strong>type</strong> – object</p></li>
+<li><p><strong>name</strong> – max_limit</p></li>
+<li><p><strong>type</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>required_photos</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.remove_photo_path_locally">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">remove_photo_path_locally</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.remove_photo_path_locally" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove photo path locally</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – photo</p></li>
+<li><p><strong>type</strong> – object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.save_object">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">save_object</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.save_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>save object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – object</p></li>
+<li><p><strong>type</strong> – obj</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.search_according_to_all_or_tags">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">search_according_to_all_or_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.search_according_to_all_or_tags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search according to all or tags</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – data</p></li>
+<li><p><strong>type</strong> – string</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>photo_ids_list</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.search_in_search_place">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">search_in_search_place</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photo_ids_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.search_in_search_place" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search in search place</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – photo_ids_list</p></li>
+<li><p><strong>type</strong> – object</p></li>
+<li><p><strong>name</strong> – user</p></li>
+<li><p><strong>type</strong> – object</p></li>
+<li><p><strong>name</strong> – user : user performing followed</p></li>
+<li><p><strong>type</strong> – object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>user_required_photos</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>following_required_photos</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+<dt class="field-even">Return name</dt>
+<dd class="field-even"><p>everyone_required_photos</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.split_tags">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">split_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.split_tags" title="Permalink to this definition">¶</a></dt>
+<dd><p>splits tags</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – data</p></li>
+<li><p><strong>type</strong> – str</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>tags_text_list</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="photos.upload">
+<span class="sig-prename descclassname"><span class="pre">photos.</span></span><span class="sig-name descname"><span class="pre">upload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_field</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photos.upload" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the type of the file from the extension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – file_field</p></li>
+<li><p><strong>type</strong> – obj</p></li>
+<li><p><strong>name</strong> – user</p></li>
+<li><p><strong>type</strong> – obj</p></li>
+<li><p><strong>name</strong> – width</p></li>
+<li><p><strong>type</strong> – obj</p></li>
+<li><p><strong>name</strong> – height</p></li>
+<li><p><strong>type</strong> – obj</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>pixels</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>message</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>response</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>message</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+            </div>
+
+        </section>
+
+        
+            <nav class="site-bottom-navigation" role="navigation">
+            
+                <a href="photosets.html" class="btn btn--primary btn--next right"
+                    title="photosets module" accesskey="n">
+                    Next
+                </a>
+            
+            
+                <a href="notifications.html" class="btn btn--primary btn--prev"
+                    title="notifications module" accesskey="p">
+                    Previous
+                </a>
+            
+            </nav>
+        
+
+        
+            <div class="source-link">
+            
+                
+                    <a href="_sources/photos.rst.txt" rel="nofollow">
+                        <i class="mdi mdi-code-tags"></i>
+                        View page source
+                    </a>
+                
+            
+            </div>
+        
+
+
+
+    </main>
+
+    <footer class="site-footer">
+<div class="container">
+
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright 2021, MK.
+        </p>
+    </div>
+        <p>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+        <a href="https://github.com/testthedocs/sphinx_ttd_theme">theme</a>
+        provided by <a href="https://testthedocs">TestTheDocs</a>. 
+
+</div>
+</footer>
+
+    
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/theme-min.js"></script> 
+</body>
+</html>
