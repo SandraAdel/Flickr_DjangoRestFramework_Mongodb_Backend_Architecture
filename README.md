@@ -1,1 +1,1 @@
-# Flickr_djangoRestFramework_mongodb
+# Flickr_DjangoRestFramework_mongodb
