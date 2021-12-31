@@ -1,2 +1,2 @@
-# Flickr_DjangoRestFramework_mongodb
+# Flickr_DjangoRestFramework_Mongodb_Backend_Architecture
 Software Engineering Course Project - Backend Architecture
